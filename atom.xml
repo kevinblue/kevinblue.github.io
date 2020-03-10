@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kevinblue.github.io</id>
     <title>KEVINBLUE</title>
-    <updated>2020-03-09T17:34:39.487Z</updated>
+    <updated>2020-03-10T03:40:26.550Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kevinblue.github.io"/>
     <link rel="self" href="https://kevinblue.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://kevinblue.github.io/images/avatar.png</logo>
     <icon>https://kevinblue.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, KEVINBLUE</rights>
+    <entry>
+        <title type="html"><![CDATA[oracle自定义序列来批量更改多列为唯一编码]]></title>
+        <id>https://kevinblue.github.io/post/oracle-zi-ding-yi-xu-lie-lai-pi-liang-geng-gai-duo-lie-wei-wei-yi-bian-ma/</id>
+        <link href="https://kevinblue.github.io/post/oracle-zi-ding-yi-xu-lie-lai-pi-liang-geng-gai-duo-lie-wei-wei-yi-bian-ma/">
+        </link>
+        <updated>2020-03-10T01:38:49.000Z</updated>
+        <content type="html"><![CDATA[<p>update ZN_FITEM set VOUCHERNUM='F0010201901'||myseqzmq.nextval WHERE DBILLDATE&gt;=TO_DATE('2019-01-01','YYYY-MM-DD') and DBILLDATE&lt;=TO_DATE('2019-01-31','YYYY-MM-DD')</p>
+<p>create sequence myseqzmq<br>
+increment by 1<br>
+start with 100<br>
+nomaxvalue<br>
+nocycle<br>
+cache 100;</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[少时诵诗书所]]></title>
         <id>https://kevinblue.github.io/post/shao-shi-song-shi-shu-suo/</id>
